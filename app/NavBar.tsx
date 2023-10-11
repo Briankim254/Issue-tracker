@@ -15,7 +15,6 @@ function NavBar() {
   return (
     <nav className="flex  space-x-6 border-b mb-5 px-5 h-14 items-center">
       <Link href={"/"}>
-        {" "}
         <AiFillBug />
       </Link>
       <ul className="flex space-x-6">
@@ -23,7 +22,7 @@ function NavBar() {
             <Link key={link.href} className={classnames({
               "text-zinc-900": currentPath === link.href,
               "text-zinc-500": currentPath !== link.href,
-              'hover:text-zinc-800': true,
+              'hover:text-zinc-00': true,
             })}
              href={link.href}>{link.label}</Link>         
         ))}
