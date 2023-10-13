@@ -2,7 +2,7 @@ import React from 'react'
 
 function issuesPage() {
   return (
-    <div>issuesPage</div>
+    <div>issues Page</div>
   )
 }
 
