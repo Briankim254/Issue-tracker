@@ -7,9 +7,7 @@ const createissueSchema = z.object({
   description: z.string().min(1),
 }); 
 
-export default async function POST(
-  request: NextRequest
-) {
+export  async function POST(request: NextRequest) {
   const body = await request.json();
   const validation = createissueSchema.safeParse(body);
   if (!validation.success) {
