@@ -1,10 +1,15 @@
-import React from 'react'
-import { Button } from '@radix-ui/themes'
+import React from "react";
+import { Button } from "@radix-ui/themes";
+import Link from "next/link";
 
 function issuesPage() {
   return (
-    <div><Button>New Isssue</Button></div>
-  )
+    <div>
+      <Button>
+        <Link href="/issues/new">New Issue</Link>
+      </Button>
+    </div>
+  );
 }
 
-export default issuesPage
+export default issuesPage;
